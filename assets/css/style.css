@@ -1,11 +1,11 @@
 .app {
     font-family: 'Poppins';
-    margin: auto 60px;
+    margin: 0 60px;
 }
 
 .cabecalho {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 30px 50px
 }
@@ -37,5 +37,48 @@
     color: #FD8D3A;
     background-color: white;
     border: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.article__main {
+    display: block;
+    width: 300px;
+    text-align: justify;
+}
+
+.titulo__main {
+    font-size: 36px;
+    width: 300px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.span {
+    color: #FD8D3A;
+}
+
+
+.paragrafo__main {
+    font-size: 8px;
+    width: 200px;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.imagem__main {
+    display: inline;
+    width: 80%;
+}
+
+.botao__main {
+    background-color: #FD8D3A;
+    border: none;
+    border-radius: 2px;
+    color: white;
 }
 
