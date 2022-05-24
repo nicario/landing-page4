@@ -43,12 +43,16 @@
     display: flex;
     align-items: center;
     margin: 0 60px;
+    width: 100vw;
 }
 
 .article__main {
-    display: block;
-    width: 300px;
+    display: inline-block;
+    position: absolute;
+    width: 100vw;
     text-align: justify;
+    top: calc(50% - 140px);
+    z-index: 2;
 }
 
 .titulo__main {
@@ -71,14 +75,18 @@
 }
 
 .imagem__main {
-    display: inline;
-    width: 80%;
+    width: 50%;
+    margin-right: 10px;
+    position: absolute;
+    left: 450px;
+    top: 180px;
+    z-index: 1;
 }
 
 .botao__main {
-    background-color: #FD8D3A;
-    border: none;
+    background-color: white;
+    color: #FD8D3A;
+    border: 1px solid;
     border-radius: 2px;
-    color: white;
 }
 
