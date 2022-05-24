@@ -1,0 +1,41 @@
+.app {
+    font-family: 'Poppins';
+    margin: auto 60px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 50px
+}
+
+.cabecalho__logo {
+    margin-right: 20%;
+}
+
+.cabecalho__navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.home, .about, .destination, .tour, .blog {
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.signup {
+    background-color: #FD8D3A;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.login {
+    color: #FD8D3A;
+    background-color: white;
+    border: none;
+}
+
