@@ -195,10 +195,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5rem;
+    
 }
 
 .lista__lista {
-    margin-right: 15px;
+    margin-right: 1rem;
     display: grid;
     grid-template-areas: 
     "a a a"
@@ -207,9 +209,8 @@ body {
     "b b c"
     "d e f";
     border: none;
-
-    padding-bottom: 10px;
     box-shadow: 2px 5px 5px rgb(191, 191, 191);
+
 }
 
 .imagem__lista {
@@ -221,6 +222,7 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
+
 }
 
 .nota__lista {
@@ -230,6 +232,7 @@ body {
 }
 
 .pais__lista {
+    display: inline;
     grid-area: d;
     font-size: 10px;
     margin-left: 10px;
@@ -246,3 +249,24 @@ body {
     font-size: 10px;
 }
 
+[data-anima] {
+    opacity: 0;
+    transition:.8s;
+}
+
+[data-anima="esquerda"] {
+    transform: translate3d(-50px,0,0);
+}
+
+[data-anima="centro"] {
+    transform: translate3d(0,50px,0);
+}
+
+[data-anima="direita"] {
+    transform: translate3d(50px,0,0);
+}
+
+[data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
